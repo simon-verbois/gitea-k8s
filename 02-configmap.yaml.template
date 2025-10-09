@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gitea-configmap
+  namespace: gitea
+data:
+  TZ: "Europe/Paris" # <-- Add your own TZ
+  USER_UID: "1003" # <-- Add your own user UID
+  USER_GID: "1003" # <-- Add your own user GID
+  GITEA__mailer__ENABLED: "true"
+  GITEA__mailer__FROM: "NoReply <noreply@your-domain.com>"
+  GITEA__mailer__PROTOCOL: "smtp"
+  GITEA__mailer__SMTP_ADDR: "xx.xx.xx.xx"
+  GITEA__mailer__SMTP_PORT: "25"
