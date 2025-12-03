@@ -16,7 +16,7 @@ spec:
         - name: gitea-service
           port: http
       middlewares:
-        - name: coraza-waf
+        - name: rate-limit
           namespace: traefik
         - name: security-headers
           namespace: traefik
